@@ -5,7 +5,7 @@ var lockedAddress = "https://api.etherscan.io/api?module=account&action=tokenbal
 
 var clmRouter = function (app) {
 
-    app.get("/t1", async (req, res, next) => {
+    app.get("/", async (req, res, next) => {
         let _locked_supply = await getLockedTokens();
 
         let _total_supply = await fetchAsync2();
@@ -28,15 +28,6 @@ var clmRouter = function (app) {
         res.status(200).send(data);
     });
 
-    app.get("/", function(req, res) {
-        var welcomeText = "Welcome to 0xbtc API hub."
-        return res.status(200).send(welcomeText);
-    });
-
-    app.get("/test", function(req, res) {
-        console.log(getLockedTokens);
-        return res.status(200).send(getLockedTokens);
-    });
 
     async function getTotalSupply(json) {
         var balanceCounter = 0;
