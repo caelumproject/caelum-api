@@ -7,9 +7,7 @@ var clmRouter = function (app) {
 
     app.get("/", async (req, res, next) => {
         let _locked_supply = await getLockedTokens();
-
-        let _total_supply = await fetchAsync2();
-
+        let _total_supply = await getTotalTokens();
         var balanceCounter = 0;
 
         for (var i = 0; i < _total_supply.holders.length; i++) {
@@ -46,7 +44,7 @@ var clmRouter = function (app) {
       return data;
     }
 
-    async function fetchAsync2 () {
+    async function getTotalTokens () {
       let response = await fetch(supplyJSON);
       let data = await response.json();
       return data;
