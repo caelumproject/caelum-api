@@ -19,6 +19,7 @@ var clmRouter = function (app) {
         console.log(balanceCounter)
 
         var data = ({
+            scriptSource: "https://github.com/caelumproject/caelum-api",
             tokenDecimals: "8",
             totalSupplyGenerated: JSON.stringify(balanceCounter),
             circulatingSupply: JSON.stringify(Number(balanceCounter - _locked_supply.result)),
