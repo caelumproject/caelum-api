@@ -14,8 +14,6 @@ var clmRouter = function (app) {
           balanceCounter += _total_supply.holders[i].balance;
         }
 
-        console.log(balanceCounter)
-
         var data = ({
             scriptSource: "https://github.com/caelumproject/caelum-api",
             tokenDecimals: "8",
