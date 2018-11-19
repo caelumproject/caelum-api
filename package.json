@@ -1,0 +1,27 @@
+{
+  "name": "caelum-api",
+  "version": "1.0.0",
+  "description": "Basic API to get a realtime view over the Caelum Token supply.",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "node-fetch": "^2.3.0",
+    "nodemon": "^1.18.6",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caelumproject/caelum-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caelumproject/caelum-api/issues"
+  },
+  "homepage": "https://github.com/caelumproject/caelum-api#readme"
+}

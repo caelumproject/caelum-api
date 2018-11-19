@@ -1,5 +1,11 @@
 const fetch = require("node-fetch");
 
+
+const _TOKEN_ADDRESS = "0xc71a7ecd96fef6e34a5c296bee9533f1deb0e3c1";
+const _TOKEN_LOCK_ADDRESS = "0xc71a7ecd96fef6e34a5c296bee9533f1deb0e3c1";
+const _PREMINE_WALLET = "0xeb3ee20c680fb87426c32f429176d229e33dc18a";
+
+
 var supplyJSON = "https://ethplorer.io/service/service.php?data=0xc71a7ecd96fef6e34a5c296bee9533f1deb0e3c1&page=tab=tab-holders%26pageSize=100000";
 var lockedAddress = "https://api.etherscan.io/api?module=account&action=tokenbalance&contractaddress=0xc71a7ecd96fef6e34a5c296bee9533f1deb0e3c1&address=0xc71a7ecd96fef6e34a5c296bee9533f1deb0e3c1&tag=latest&apikey=WSXFQJCUUXQR6HY1PQB9KJQCQ3RIYPUVDQ"
 
